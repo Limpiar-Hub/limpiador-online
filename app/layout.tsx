@@ -2,6 +2,7 @@ import { GeistSans } from "geist/font/sans"
 import type { Metadata } from "next"
 import { Suspense } from "react"
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import type React from "react"
 
 import { Navbar } from "@/components/navbar"
@@ -87,6 +88,7 @@ export default function RootLayout({
         <Footer />
         <Toaster />
         <Analytics />
+        <SpeedInsights/>
       </body>
     </html>
   )

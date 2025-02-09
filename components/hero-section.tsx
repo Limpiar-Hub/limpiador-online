@@ -41,7 +41,7 @@ export function HeroSection() {
     <section className="relative min-h-[600px] overflow-hidden">
       {/* Video Background */}
       <video autoPlay loop muted playsInline className="absolute inset-0 h-full w-full object-cover">
-        <source src="/hero-video.mp4" type="video/mp4" />
+        <source src="https://github.com/Oluwaferanmi-Dev/limpiador-online/raw/refs/heads/main/public/hero-video.mp4" type="video/mp4" />
       </video>
 
       {/* Gradient Overlay */}
