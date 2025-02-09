@@ -32,8 +32,6 @@ export function HeroSection() {
 
       setMessage("Welcome email sent successfully!")
       setEmail("")
-    } catch (error) {
-      setMessage("Error sending email. Please try again.")
     } finally {
       setLoading(false)
     }
