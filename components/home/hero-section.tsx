@@ -8,13 +8,12 @@ import { Input } from "@/components/ui/input";
 
 export function HeroSection() {
   const [email, setEmail] = useState("");
-  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async () => {
-    if (!email.trim()) {
-      setError("Please enter a valid email.");
-      return;
-    }
+    if (!email.trim()) return;
+
+    setLoading(true);
 
     try {
       const response = await fetch("/api/sendEmail", {
@@ -26,12 +25,11 @@ export function HeroSection() {
       if (response.ok) {
         alert("Successfully subscribed!");
         setEmail("");
-        setError("");
-      } else {
-        setError("Subscription failed. Please try again.");
       }
-    } catch (error) {
-      setError("An error occurred. Please try again later.");
+    } catch {
+      alert("An error occurred. Please try again later.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -66,16 +64,17 @@ export function HeroSection() {
               className="bg-white/90"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              disabled={loading}
             />
             <Button
               size="lg"
               className="bg-yellow-400 hover:bg-yellow-500 text-black"
               onClick={handleSubmit}
+              disabled={loading}
             >
-              Get Started
+              {loading ? "Submitting..." : "Get Started"}
             </Button>
           </div>
-          {error && <p className="text-red-500 text-sm">{error}</p>}
         </motion.div>
       </div>
     </section>
