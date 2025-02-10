@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: "Join our network of cleaning professionals and unlock new opportunities for business growth.",
     images: [
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-limpiador-online-limpiador-2025-02-09-13_49_08-jNPjdpXP8a7SaKdrAIVH57ghu6hrtf.png",
+        url: "/logo.png",
         width: 1200,
         height: 630,
       },

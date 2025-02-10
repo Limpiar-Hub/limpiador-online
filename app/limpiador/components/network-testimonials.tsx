@@ -17,7 +17,7 @@ const testimonials = [
     name: "Carlos Martinez",
     role: "Team Manager",
     image:
-      "/carlos.png",
+      "/aisha.png",
     quote:
       "The training and resources provided by Limpiar have elevated our team's performance. We're now able to take on more complex projects with confidence.",
   },
@@ -25,7 +25,7 @@ const testimonials = [
     name: "Aisha Roberts",
     role: "Cleaning Professional",
     image:
-      "/aisha.png",
+      "/carlos.png",
     quote:
       "I love being part of the Limpiar network. The flexible scheduling and fair pay have improved my work-life balance, and I feel valued as a professional.",
   },
