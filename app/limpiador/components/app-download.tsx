@@ -40,7 +40,7 @@ export function AppDownload() {
                 rel="noopener noreferrer"
               >
                 <Image
-                  src="/google-play-badge.png"
+                  src="/google-play-badge.svg"
                   alt="Get it on Google Play"
                   width={250}
                   height={200}
