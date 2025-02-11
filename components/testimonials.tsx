@@ -11,7 +11,7 @@ const testimonials = [
     role: "Property Manager",
     image: "/chris.png",
     quote:
-      "Working with Limpiar has been great! Their team is super reliable, and the eco-friendly cleaning options have been a big plus for us. They&quotve made it easy to keep our properties looking great without breaking the budget. I also like that they keep us in the loop with updates and metrics—it really shows they care about doing a good job.",
+      "Working with Limpiar has been great! Their team is super reliable, and the eco-friendly cleaning options have been a big plus for us. They have made it easy to keep our properties looking great without breaking the budget. I also like that they keep us in the loop with updates and metrics—it really shows they care about doing a good job.",
   },
   {
     id: 2,

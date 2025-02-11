@@ -27,7 +27,7 @@ const services = [
   },
   {
     title: "Supply Management",
-    image: "/supply.png",
+    image: "/construction.png",
     description: "Efficient management of cleaning supplies",
   },
   {

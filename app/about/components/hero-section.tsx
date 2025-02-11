@@ -21,16 +21,16 @@ export function HeroSection() {
               Limpiar is dedicated to eco-friendly solutions that ensure clean, safe, and healthy environments for all.
             </p>
             <div className="flex space-x-4 mb-8">
-              <a href="#" className="text-gray-600 hover:text-blue-600">
+              <a href="https://www.facebook.com/limpiar.official?mibextid=LQQJ4d" className="text-gray-600 hover:text-blue-600">
                 <Facebook className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-600 hover:text-blue-600">
+              <a href="https://twitter.com/LimpiarOnline" className="text-gray-600 hover:text-blue-600">
                 <Twitter className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-600 hover:text-blue-600">
+              <a href="https://www.instagram.com/limpiaronline/" className="text-gray-600 hover:text-blue-600">
                 <Instagram className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-600 hover:text-blue-600">
+              <a href="https://www.linkedin.com/company/limpiaronline/" className="text-gray-600 hover:text-blue-600">
                 <Linkedin className="w-6 h-6" />
               </a>
             </div>

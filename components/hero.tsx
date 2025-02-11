@@ -16,7 +16,7 @@ export function Hero() {
           transition={{ duration: 0.5 }}
           className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
         >
-          Sustainable Solution
+          Sustainable Solutions
           <br />
           <span className="text-blue-500">For the modern business</span>
         </motion.h1>
@@ -26,7 +26,7 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mx-auto max-w-[600px] text-gray-500 md:text-xl"
         >
-          Professional cleaning services that care for your space and the environment.
+          Professional services that care for your space and the environment.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

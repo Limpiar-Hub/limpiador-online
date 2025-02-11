@@ -53,7 +53,7 @@ export function Footer() {
               />
             </Link>
             <p className="text-sm text-gray-600">
-              Professional cleaning services that care for your space and the environment.
+              Professional services that care for your space and the environment.
             </p>
           </div>
 

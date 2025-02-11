@@ -56,11 +56,11 @@ export function HeroSection() {
           className="max-w-2xl text-white"
         >
           <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-            Sustainable Solution
+            Sustainable Solutions
             <span className="block text-blue-400">For the modern business</span>
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            Professional cleaning services that care for your space and the environment.
+            Professional services that care for your space and the environment.
           </p>
           <div className="mt-10 flex max-w-md gap-x-4">
             <Input

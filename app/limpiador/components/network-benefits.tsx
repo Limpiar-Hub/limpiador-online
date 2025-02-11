@@ -8,7 +8,7 @@ const benefits = [
   { icon: Gift, title: "Perks and Discounts" },
   { icon: CreditCard, title: "Fast Payments" },
   { icon: Users, title: "Provider Portal" },
-  { icon: BookOpen, title: "IRA Providers and Coaching" },
+  { icon: BookOpen, title: "10k Providers and counting" },
   { icon: BarChart3, title: "Sales and Marketing" },
 ]
 

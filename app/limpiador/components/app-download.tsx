@@ -20,7 +20,7 @@ export function AppDownload() {
           <div className="space-y-6 text-center md:text-left">
             <div className="flex flex-col md:flex-row gap-6 justify-center md:justify-start">
               <a
-                href="#"
+                href="https://apps.apple.com/us/app/limpiador/id6480585258"
                 className="inline-block transition-transform hover:scale-110"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -34,7 +34,7 @@ export function AppDownload() {
                 />
               </a>
               <a
-                href="#"
+                href="https://play.google.com/store/apps/details?id=com.limpiar.agen"
                 className="inline-block transition-transform hover:scale-110"
                 target="_blank"
                 rel="noopener noreferrer"
