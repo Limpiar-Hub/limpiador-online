@@ -5,9 +5,6 @@ import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 export function Navbar() {
-  // Remove this line:
-  // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white">
       <div className="container mx-auto px-4">
@@ -23,9 +20,26 @@ export function Navbar() {
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/commerce-spaces" className="text-sm font-medium text-gray-700 hover:text-blue-600">
-              Commerce Spaces
-            </Link>
+            {/* Commerce Spaces with Submenu */}
+            <div className="relative group">
+              <Link
+                href="/commerce-spaces"
+                className="text-sm font-medium text-gray-700 hover:text-blue-600"
+              >
+                Commerce Spaces
+              </Link>
+
+              {/* Dropdown Submenu */}
+              <div className="absolute left-0 mt-2 hidden w-48 bg-white border rounded-lg shadow-lg group-hover:block">
+                <Link
+                  href="/start-here"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >
+                  Start Here
+                </Link>
+              </div>
+            </div>
+
             <Link href="/limpiador" className="text-sm font-medium text-gray-700 hover:text-blue-600">
               Limpiador
             </Link>
@@ -45,6 +59,7 @@ export function Navbar() {
 
           <Button className="hidden md:inline-flex">Get Started</Button>
 
+          {/* Mobile Navigation Drawer */}
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
@@ -56,42 +71,25 @@ export function Navbar() {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <nav className="flex flex-col space-y-4 mt-6">
-                <Link
-                  href="/commerce-spaces"
-                  className="text-lg font-medium text-gray-700 hover:text-blue-600"
-                  onClick={() => {}}
-                >
+                <Link href="/commerce-spaces" className="text-lg font-medium text-gray-700 hover:text-blue-600">
                   Commerce Spaces
                 </Link>
-                <Link
-                  href="/limpiador"
-                  className="text-lg font-medium text-gray-700 hover:text-blue-600"
-                  onClick={() => {}}
-                >
+                <Link href="/start-here" className="pl-4 text-md font-medium text-gray-600 hover:text-blue-600">
+                  Start Here
+                </Link>
+                <Link href="/limpiador" className="text-lg font-medium text-gray-700 hover:text-blue-600">
                   Limpiador
                 </Link>
-                <Link
-                  href="/waste-management"
-                  className="text-lg font-medium text-gray-700 hover:text-blue-600"
-                  onClick={() => {}}
-                >
+                <Link href="/waste-management" className="text-lg font-medium text-gray-700 hover:text-blue-600">
                   Waste Management
                 </Link>
-                <Link
-                  href="/about"
-                  className="text-lg font-medium text-gray-700 hover:text-blue-600"
-                  onClick={() => {}}
-                >
+                <Link href="/about" className="text-lg font-medium text-gray-700 hover:text-blue-600">
                   About Us
                 </Link>
-                <Link
-                  href="/social-impact"
-                  className="text-lg font-medium text-gray-700 hover:text-blue-600"
-                  onClick={() => {}}
-                >
+                <Link href="/social-impact" className="text-lg font-medium text-gray-700 hover:text-blue-600">
                   Social Impact
                 </Link>
-                <Button className="mt-4" onClick={() => {}}>
+                <Button className="mt-4">
                   Get Started
                 </Button>
               </nav>
@@ -102,4 +100,3 @@ export function Navbar() {
     </header>
   )
 }
-

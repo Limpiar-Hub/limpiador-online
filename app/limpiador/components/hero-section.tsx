@@ -2,14 +2,14 @@
 
 import { useState, useEffect } from "react"
 import Image from "next/image"
+import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@/components/ui/button"
 
 const heroSlides = [
   {
     title: "GET READY TO UNLOCK NEW OPPORTUNITIES",
-    image:
-      "/hero-image.png",
+    image: "/hero-image.png",
     alt: "Cleaning professionals in Limpiar uniforms",
   },
   {
@@ -57,9 +57,11 @@ export function HeroSection() {
                 {heroSlides[currentSlide].title}
               </motion.h1>
             </AnimatePresence>
-            <Button size="lg" className="bg-[#4834D4] hover:bg-[#3A2BBF] text-lg px-8">
-              Get Started
-            </Button>
+            <Link href="https://onboarding.limpiar.online/public/onboarding">
+              <Button size="lg" className="bg-[#4834D4] hover:bg-[#3A2BBF] text-lg px-8">
+                Get Started
+              </Button>
+            </Link>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
@@ -92,4 +94,3 @@ export function HeroSection() {
     </section>
   )
 }
-
