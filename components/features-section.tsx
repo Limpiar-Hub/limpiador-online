@@ -12,7 +12,7 @@ const features = [
     title: "Start building stronger firstparty relationships",
     description:
       "I'm a paragraph. Click here to add your text and edit me. It's easy. I'm a paragraph. Click here to add your text and edit me. It's easy.",
-    image: "/transparency.png",
+    image: "/transparenc.png",
   },
   {
     id: "efficiency",
