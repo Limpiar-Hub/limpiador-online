@@ -58,7 +58,7 @@ export function GetStartedSteps() {
           </div>
           <div className="relative h-[400px] lg:h-[500px] rounded-xl overflow-hidden">
             <Image
-              src="/getting-started.png"
+              src="/getting.png"
               alt="Happy team members celebrating success"
               fill
               className="object-cover"

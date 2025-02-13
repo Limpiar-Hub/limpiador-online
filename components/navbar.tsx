@@ -1,8 +1,8 @@
-"use client"
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 export function Navbar() {
   return (
@@ -20,26 +20,12 @@ export function Navbar() {
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
-            {/* Commerce Spaces with Submenu */}
-            <div className="relative group">
-              <Link
-                href="/commerce-spaces"
-                className="text-sm font-medium text-gray-700 hover:text-blue-600"
-              >
-                Commerce Spaces
-              </Link>
-
-              {/* Dropdown Submenu */}
-              <div className="absolute left-0 mt-2 hidden w-48 bg-white border rounded-lg shadow-lg group-hover:block">
-                <Link
-                  href="/start-here"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  Start Here
-                </Link>
-              </div>
-            </div>
-
+            <Link href="/commerce-spaces" className="text-sm font-medium text-gray-700 hover:text-blue-600">
+              Commerce Spaces
+            </Link>
+            <Link href="/start-here" className="text-sm font-medium text-gray-700 hover:text-blue-600">
+              Start Here
+            </Link>
             <Link href="/limpiador" className="text-sm font-medium text-gray-700 hover:text-blue-600">
               Limpiador
             </Link>
@@ -74,7 +60,7 @@ export function Navbar() {
                 <Link href="/commerce-spaces" className="text-lg font-medium text-gray-700 hover:text-blue-600">
                   Commerce Spaces
                 </Link>
-                <Link href="/start-here" className="pl-4 text-md font-medium text-gray-600 hover:text-blue-600">
+                <Link href="/start-here" className="text-lg font-medium text-gray-700 hover:text-blue-600">
                   Start Here
                 </Link>
                 <Link href="/limpiador" className="text-lg font-medium text-gray-700 hover:text-blue-600">
@@ -89,14 +75,12 @@ export function Navbar() {
                 <Link href="/social-impact" className="text-lg font-medium text-gray-700 hover:text-blue-600">
                   Social Impact
                 </Link>
-                <Button className="mt-4">
-                  Get Started
-                </Button>
+                <Button className="mt-4">Get Started</Button>
               </nav>
             </SheetContent>
           </Sheet>
         </div>
       </div>
     </header>
-  )
+  );
 }
