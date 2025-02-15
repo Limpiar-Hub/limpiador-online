@@ -18,7 +18,7 @@ export function JoinMovement() {
             Join the Movement to Seamless Property Care with Limpiar.
           </h2>
           <p className="text-xl md:text-2xl leading-relaxed">
-            The shift to smart, always-on property care is here and it's happening with Limpiar. Join property managers
+            The shift to smart, always-on property care is here and it&apos;s happening with Limpiar. Join property managers
             everywhere who are redefining cleanliness and efficiency.
           </p>
           <div>

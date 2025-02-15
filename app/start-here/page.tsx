@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Suspense } from "react";
 import { LoadingSpinner } from "@/components/loading-spinner";
 
@@ -24,17 +25,21 @@ export default function StartHerePage() {
       <Suspense fallback={<LoadingSpinner />}>
         <section className="container mx-auto py-12">
           <div className="flex justify-center">
-            <img 
+            <Image 
               src="/start.png" 
               alt="Start Here Banner" 
-              className="w-[800px] h-auto max-w-full"
+              width={800} 
+              height={500} 
+              className="max-w-full h-auto"
             />
           </div>
           <div className="flex justify-center mt-8">
-            <img 
+            <Image 
               src="/start2.png" 
               alt="Security Checks" 
-              className="w-[600px] h-auto max-w-full"
+              width={600} 
+              height={400} 
+              className="max-w-full h-auto"
             />
           </div>
         </section>
