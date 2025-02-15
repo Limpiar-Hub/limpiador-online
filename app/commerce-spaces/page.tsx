@@ -6,6 +6,7 @@ import { FeaturesSection } from "@/components/features-section"
 import { LimpiarAdvantage } from "@/components/limpiar-advantage"
 import { ServiceCircles } from "@/components/service-circles"
 import { Testimonials } from "@/components/testimonials"
+import { StatsBar } from "@/components/stats-bar"
 import { GetStartedSteps } from "@/components/get-started-steps"
 import { LoadingSpinner } from "@/components/loading-spinner"
 
@@ -20,6 +21,7 @@ export default function Home() {
         <LimpiarAdvantage />
         <ServiceCircles />
         <Testimonials />
+        <StatsBar />
         <GetStartedSteps />
       </Suspense>
     </main>
