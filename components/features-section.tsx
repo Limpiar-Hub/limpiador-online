@@ -72,7 +72,9 @@ export function FeaturesSection() {
                   <div className="space-y-4">
                     <h2 className="text-3xl font-bold tracking-tight">{feature.title}</h2>
                     <p className="text-gray-600 leading-relaxed">{feature.description}</p>
-                    <Button size="lg">Get Started</Button>
+                    <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+                      Get Started
+                    </Button>
                   </div>
                   <div className="relative h-[400px] rounded-xl overflow-hidden">
                     <Image

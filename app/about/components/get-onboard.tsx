@@ -12,9 +12,15 @@ export function GetOnboard() {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Get Onboard</h2>
             <p className="text-lg text-blue-600 mb-8">
-              Join us as we continue to innovate and lead the change in making the commercial cleaning industry a beacon
-              of environmental responsibility and human-centered service. At Limpiar, we merge purpose with passion, and
-              a commitment to a better world.
+            At Limpiar, we are on a mission to transform the commercial cleaning space.
+
+ 
+
+Our approach is simple yet profound: provide sustainable cleaning services that benefit both people and the planet. Founded by industry experts who recognized the need for a change from traditional methods, Limpiar is dedicated to eco-friendly solutions that ensure clean, safe, and healthy environments for all.
+
+​
+
+We combine state-of-the-art technology with best-in-class cleaning practices to offer services that not only meet but exceed our clients’ expectations. From reducing chemical use to implementing advanced recycling techniques, every aspect of our operation is designed with sustainability at its core.
             </p>
             <Button size="lg">Join Our Team</Button>
           </motion.div>

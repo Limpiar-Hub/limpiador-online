@@ -139,7 +139,9 @@ export function ServicesNavigation() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.4 }}
                   >
-                    <Button size="lg">Learn More</Button>
+                    <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+                    Learn More
+                  </Button>
                   </motion.div>
                 </div>
               </motion.div>

@@ -18,7 +18,9 @@ export function ComingSoon() {
             We&apos;re working on something amazing. Our sustainable waste management solutions will be available soon. Sign
             up to be notified when we launch.
           </p>
-          <Button size="lg">Get Notified</Button>
+          <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+            Get Notified
+          </Button>
         </motion.div>
       </div>
     </section>

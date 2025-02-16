@@ -7,9 +7,9 @@ const advantages = [
   { text: "Centralized Operations", angle: 35 },
   { text: "Streamlined Property Management", angle: 90 },
   { text: "Cleaning Simplified", angle: 180 },
-  { text: "Unified Service Aggregation", angle: 215 },
+  { text: "Unified Service Aggregation", angle: 210 },
   { text: "Enhanced Tenant Retention", angle: 270 },
-  { text: "Eco-Friendly Services", angle: 325 },
+  { text: "Eco-Friendly Services", angle: 330 },
   { text: "On-Demand Solutions", angle: 0 },
   { text: "Advanced Technology", angle: 145 },
 ]
