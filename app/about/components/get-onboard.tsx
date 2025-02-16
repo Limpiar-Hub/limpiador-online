@@ -11,7 +11,7 @@ export function GetOnboard() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Get Onboard</h2>
-            <p className="text-lg text-gray-600 mb-8">
+            <p className="text-lg text-blue-600 mb-8">
               Join us as we continue to innovate and lead the change in making the commercial cleaning industry a beacon
               of environmental responsibility and human-centered service. At Limpiar, we merge purpose with passion, and
               a commitment to a better world.

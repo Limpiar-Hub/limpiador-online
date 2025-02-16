@@ -108,9 +108,9 @@ export function Footer() {
                   I agree to receive marketing emails
                 </label>
               </div>
-              <Button type="submit" className="w-full">
-                Sign Up
-              </Button>
+              <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white">
+              Sign Up
+            </Button>
             </form>
           </div>
         </div>
