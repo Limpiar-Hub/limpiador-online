@@ -9,6 +9,9 @@ import { Testimonials } from "@/components/testimonials"
 import { StatsBar } from "@/components/stats-bar"
 import { GetStartedSteps } from "@/components/get-started-steps"
 import { LoadingSpinner } from "@/components/loading-spinner"
+import { JoinMovement } from "@/components/join-movement"
+
+import React from "react"
 
 export default function Home() {
   return (
@@ -23,6 +26,7 @@ export default function Home() {
         <Testimonials />
         <StatsBar />
         <GetStartedSteps />
+        <JoinMovement />
       </Suspense>
     </main>
   )

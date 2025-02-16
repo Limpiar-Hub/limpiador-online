@@ -14,12 +14,12 @@ const heroSlides = [
   },
   {
     title: "JOIN OUR NETWORK OF CLEANING EXPERTS",
-    image: "/hero-image.png",
+    image: "/join-limpiar.png",
     alt: "Professional cleaning equipment",
   },
   {
     title: "GROW YOUR BUSINESS WITH LIMPIAR",
-    image: "/hero-image.png",
+    image: "/grow-your-business.png",
     alt: "Happy cleaning professionals",
   },
 ]
@@ -36,15 +36,32 @@ export function HeroSection() {
   }, [])
 
   return (
-    <section className="relative overflow-hidden bg-white py-20 md:py-32">
+    <section className="relative overflow-hidden bg-white">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-center lg:text-left"
-          >
+        <div className="relative h-[500px] md:h-[600px] lg:h-[700px]">
+          {/* Image Container */}
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={currentSlide}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5 }}
+              className="absolute inset-0"
+            >
+              <Image
+                src={heroSlides[currentSlide].image || "/placeholder.svg"}
+                alt={heroSlides[currentSlide].alt}
+                fill
+                className="object-cover"
+                priority
+                sizes="(max-width: 768px) 100vw, 100vw"
+              />
+            </motion.div>
+          </AnimatePresence>
+
+          {/* Text Overlay */}
+          <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-50 p-4">
             <AnimatePresence mode="wait">
               <motion.h1
                 key={currentSlide}
@@ -52,7 +69,7 @@ export function HeroSection() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.5 }}
-                className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#4834D4] leading-tight mb-8"
+                className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-8"
               >
                 {heroSlides[currentSlide].title}
               </motion.h1>
@@ -62,33 +79,7 @@ export function HeroSection() {
                 Get Started
               </Button>
             </Link>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="relative h-[300px] md:h-[400px]"
-          >
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={currentSlide}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.5 }}
-                className="absolute inset-0"
-              >
-                <Image
-                  src={heroSlides[currentSlide].image || "/placeholder.svg"}
-                  alt={heroSlides[currentSlide].alt}
-                  fill
-                  className="object-cover"
-                  priority
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </motion.div>
-            </AnimatePresence>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

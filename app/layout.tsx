@@ -6,7 +6,6 @@ import type React from "react"
 
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
-import { JoinMovement } from "@/components/join-movement"
 import { LoadingSpinner } from "@/components/loading-spinner"
 import { Toaster } from "@/components/ui/toaster"
 
@@ -85,7 +84,6 @@ export default function RootLayout({
       <body className="min-h-screen bg-background">
         <Navbar />
         <Suspense fallback={<LoadingSpinner />}>{children}</Suspense>
-        <JoinMovement />
         <Footer />
         <Toaster />
         <Analytics />
