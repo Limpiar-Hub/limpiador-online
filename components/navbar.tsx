@@ -93,11 +93,13 @@ export function Navbar() {
           </nav>
 
           {/* Get Started Button */}
-          <Button className="hidden md:inline-flex bg-blue-600 hover:bg-blue-700 text-white">
+          <Link
+            href="https://www.limpiar.online/landingpage"
+            className="hidden md:inline-flex bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium"
+          >
             Get Started
-          </Button>
-
-          {/* Mobile Navigation */}
+          </Link>
+                    {/* Mobile Navigation */}
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
@@ -127,9 +129,12 @@ export function Navbar() {
                 <Link href="/social-impact" className="text-lg font-medium text-gray-700 hover:text-blue-600">
                   Social Impact
                 </Link>
-                <Button className="mt-4 bg-blue-600 hover:bg-blue-700 text-white">
+                <Link
+                  href="https://www.limpiar.online/landingpage"
+                  className="hidden md:inline-flex bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium"
+                >
                   Get Started
-                </Button>
+                </Link>
               </nav>
             </SheetContent>
           </Sheet>
