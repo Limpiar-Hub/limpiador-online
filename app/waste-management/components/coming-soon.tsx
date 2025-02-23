@@ -14,7 +14,7 @@ export function ComingSoon() {
           className="max-w-2xl mx-auto"
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Coming Soon</h2>
-          <p className="text-xl text-blue-600 mb-8">
+          <p className="text-xl text-black-600 mb-8">
             We&apos;re working on something amazing. Our sustainable waste management solutions will be available soon. Sign
             up to be notified when we launch.
           </p>

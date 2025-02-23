@@ -48,15 +48,14 @@ export function Testimonials() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-blue-50 to-white">
       <div className="container mx-auto px-4">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-4xl md:text-5xl font-bold text-center mb-16"
-        >
-          Why Managers Love Limpiar
-        </motion.h2>
-
+      <motion.h2
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="text-4xl md:text-5xl font-bold text-center mb-25 py-12"
+      >
+        Why Managers Love Limpiar
+      </motion.h2>
         <div className="relative h-[500px] md:h-[600px] lg:h-[700px]">
           {/* Image Container */}
           <AnimatePresence mode="wait">
@@ -80,7 +79,7 @@ export function Testimonials() {
                         src={testimonial.image || "/placeholder.svg"}
                         alt={testimonial.name}
                         fill
-                        className="object-cover"
+                        className="object-contain"
                         sizes="(max-width: 768px) 100vw, 100vw"
                         priority
                       />

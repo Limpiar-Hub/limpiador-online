@@ -84,7 +84,7 @@ export function Footer() {
             <h3 className="font-semibold mb-4">Contact</h3>
             <ul className="space-y-2">
               <li className="text-sm text-gray-600">Email: hello@limpiar.online</li>
-              <li className="text-sm text-gray-600">Phone: (555) 123-4567</li>
+              <li className="text-sm text-gray-600">Phone: (833) 546-7427</li>
             </ul>
           </div>
 

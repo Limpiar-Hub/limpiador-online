@@ -9,11 +9,12 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
 const features = [
   {
     id: "transparency",
-    title: "Start building stronger firstparty relationships",
+    title: "Empower Transparency with Our Accountability Dashboard",
     description:
-      "I'm a paragraph. Click here to add your text and edit me. It's easy. I'm a paragraph. Click here to add your text and edit me. It's easy.",
+      "Track progress, monitor performance, and ensure every job meets your standards. Our accountability dashboard gives you full transparency, so you always know who’s on-site and what’s getting done.",
     image: "/transparenc.png",
   },
+  
   {
     id: "efficiency",
     title: "Smart Scheduling Assistant",

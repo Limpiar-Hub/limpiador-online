@@ -11,7 +11,7 @@ export function GetOnboard() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Get Onboard</h2>
-            <p className="text-lg text-blue-600 mb-8">
+            <p className="text-lg text-blaxk-600 mb-8">
             At Limpiar, we are on a mission to transform the commercial cleaning space.
 
  
@@ -22,7 +22,9 @@ Our approach is simple yet profound: provide sustainable cleaning services that 
 
 We combine state-of-the-art technology with best-in-class cleaning practices to offer services that not only meet but exceed our clients’ expectations. From reducing chemical use to implementing advanced recycling techniques, every aspect of our operation is designed with sustainability at its core.
             </p>
-            <Button size="lg">Join Our Team</Button>
+            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+              Join Our Team
+            </Button>
           </motion.div>
 
           <motion.div
