@@ -12,7 +12,7 @@ const services = [
     title: "Hygiene Solutions for Healthcare",
     description:
       "Essential cleaning for healthcare facilities, ensuring hygienic spaces, infection control, and compliance with the highest safety standards",
-    image: "/healthcare.png",
+    image: "/healthcare.jpg",
   },
   {
     id: "retail",
@@ -20,7 +20,7 @@ const services = [
     title: "Spotless Retail Spaces for Enhanced Shopper Experience",
     description:
       "Keep your retail spaces spotless to elevate the shopper experience and boost retention. Ensure consistent standards across multiple locations with streamlined operations, maintaining high-traffic areas and preserving your store's visual appeal.",
-    image: "/retail.png",
+    image: "/retail.jpg",
   },
   {
     id: "hospitality",
@@ -28,7 +28,7 @@ const services = [
     title: "Hospitality Cleaning Services That Impress Your Guests",
     description:
       "Our cleaning services ensure your hospitality venue shines from lobby to lounge, leaving a lasting impression on your guests. We use environmentally safe products to prioritize guest health and safety while maintaining the highest standards of cleanliness.",
-    image: "/hospitality.png",
+    image: "/hospitality.jpg",
   },
   {
     id: "government",
@@ -36,7 +36,7 @@ const services = [
     title: "Reliable Cleaning Services for Government Facilities",
     description:
       "Ensure compliance with health and safety regulations through regular audits. Our disciplined veteran workforce delivers secure, high-standard cleaning for government facilities",
-    image: "/government.png",
+    image: "/government.jpg",
   },
   {
     id: "industrial",
@@ -44,7 +44,7 @@ const services = [
     title: "Industrial Cleaning Services for Safety and Productivity",
     description:
       "Ensure worker safety with rigorous cleaning that reduces hazards, minimizes downtime, and maintains productivity. Our consistent upkeep of high-traffic areas preserves the functionality and appearance of industrial spaces.",
-    image: "/industrial.png",
+    image: "/industrial.jpg",
   },
   {
     id: "hoa",
@@ -52,7 +52,7 @@ const services = [
     title: "Professional Cleaning Services for HOA Communities",
     description:
       "Transforming community living with professional cleaning solutions designed specifically for HOAs. From common areas to shared amenities, we ensure every space is spotless, promoting resident satisfaction, maintaining property values, and creating a welcoming environment",
-    image: "/hoa.png",
+    image: "/hoa.jpg",
   },
   {
     id: "education",
@@ -60,7 +60,7 @@ const services = [
     title: "Expert Cleaning Solutions for Community Living",
     description:
       "Providing clean, safe, and healthy environments where students and educators can thrive. Our tailored cleaning solutions ensure that classrooms, libraries, and common areas are spotless, fostering a positive atmosphere for learning and growth.",
-    image: "/educational.png",
+    image: "/educational.jpg",
   },
 ]
 
