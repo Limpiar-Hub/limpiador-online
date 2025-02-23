@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion"
 import { Search } from "lucide-react"
+import Link from "next/link"
 
-import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 
 export function Hero() {
@@ -35,13 +35,15 @@ export function Hero() {
           className="flex w-full max-w-sm items-center space-x-2"
         >
           <Input type="email" placeholder="Enter your business email" />
-          <Button type="submit">
+          <Link
+            href="https://www.limpiar.online/landingpage"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center"
+          >
             <Search className="mr-2 h-4 w-4" />
             Search
-          </Button>
+          </Link>
         </motion.div>
       </div>
     </section>
   )
 }
-
