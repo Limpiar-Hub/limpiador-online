@@ -1,26 +1,20 @@
-"use client";
-import Image from "next/image";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+"use client"
+import Image from "next/image"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { useState } from "react"
+import { AnimatePresence, motion } from "framer-motion"
 
 export function Navbar() {
-  const [isCommerceSpacesOpen, setIsCommerceSpacesOpen] = useState(false);
+  const [isCommerceSpacesOpen, setIsCommerceSpacesOpen] = useState(false)
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
-            <Image
-              src="/logo.png"
-              alt="Limpiar Logo"
-              width={140}
-              height={40}
-              className="h-8 w-auto"
-            />
+            <Image src="/logo.png" alt="Limpiar Logo" width={140} height={40} className="h-8 w-auto" />
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
@@ -31,26 +25,16 @@ export function Navbar() {
               onMouseLeave={() => setIsCommerceSpacesOpen(false)}
             >
               <div className="flex items-center gap-1">
-                <Link
-                  href="/commerce-spaces"
-                  className="text-sm font-medium text-gray-700 hover:text-blue-600"
-                >
+                <Link href="/commerce-spaces" className="text-sm font-medium text-gray-700 hover:text-blue-600">
                   Commerce Spaces
                 </Link>
                 <svg
-                  className={`w-4 h-4 transition-transform ${
-                    isCommerceSpacesOpen ? "rotate-180" : ""
-                  }`}
+                  className={`w-4 h-4 transition-transform ${isCommerceSpacesOpen ? "rotate-180" : ""}`}
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </div>
 
@@ -99,7 +83,7 @@ export function Navbar() {
           >
             Get Started
           </Link>
-                    {/* Mobile Navigation */}
+          {/* Mobile Navigation */}
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
@@ -141,5 +125,6 @@ export function Navbar() {
         </div>
       </div>
     </header>
-  );
+  )
 }
+

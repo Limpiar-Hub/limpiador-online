@@ -6,13 +6,7 @@ import Image from "next/image"
 export function HeroSection() {
   return (
     <section className="relative h-[60vh] min-h-[600px] flex items-center justify-center overflow-hidden">
-      <Image
-        src="/waste.png"
-        alt="Waste Management"
-        fill
-        className="object-cover"
-        priority
-      />
+      <Image src="/waste.png" alt="Waste Management" fill className="object-cover" priority />
       <div className="absolute inset-0 bg-black/30" />
 
       <div className="relative container mx-auto px-4 text-center">

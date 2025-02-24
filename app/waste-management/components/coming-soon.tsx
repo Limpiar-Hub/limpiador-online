@@ -1,9 +1,47 @@
 "use client"
 
+import type React from "react"
+
+import { useState } from "react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
 
 export function ComingSoon() {
+  const [email, setEmail] = useState("")
+  const [loading, setLoading] = useState(false)
+  const [message, setMessage] = useState("")
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    if (!email) {
+      setMessage("Please enter a valid email.")
+      return
+    }
+
+    setLoading(true)
+    setMessage("")
+
+    try {
+      const response = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      })
+
+      if (response.ok) {
+        setMessage("Thank you for subscribing! We'll notify you when our waste management services are available.")
+        setEmail("")
+      } else {
+        setMessage("An error occurred. Please try again.")
+      }
+    } catch (error) {
+      setMessage("An error occurred. Please try again.")
+    } finally {
+      setLoading(false)
+    }
+  }
+
   return (
     <section className="py-24">
       <div className="container mx-auto px-4 text-center">
@@ -14,13 +52,23 @@ export function ComingSoon() {
           className="max-w-2xl mx-auto"
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Coming Soon</h2>
-          <p className="text-xl text-black-600 mb-8">
-            We&apos;re working on something amazing. Our sustainable waste management solutions will be available soon. Sign
+          <p className="text-xl text-gray-600 mb-8">
+            We're working on something amazing. Our sustainable waste management solutions will be available soon. Sign
             up to be notified when we launch.
           </p>
-          <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-            Get Notified
-          </Button>
+          <form onSubmit={handleSubmit} className="flex flex-col items-center space-y-4">
+            <Input
+              type="email"
+              placeholder="Enter your email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="max-w-md"
+            />
+            <Button type="submit" size="lg" className="bg-blue-600 hover:bg-blue-700 text-white" disabled={loading}>
+              {loading ? "Submitting..." : "Get Notified"}
+            </Button>
+          </form>
+          {message && <p className="mt-4 text-sm text-gray-600">{message}</p>}
         </motion.div>
       </div>
     </section>

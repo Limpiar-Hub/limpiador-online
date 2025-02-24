@@ -29,12 +29,7 @@ export function Vision() {
             transition={{ duration: 0.8 }}
             className="relative h-[400px] rounded-xl overflow-hidden"
           >
-            <Image
-              src="/our-vision.png"
-              alt="Team collaboration"
-              fill
-              className="object-cover"
-            />
+            <Image src="/our-vision.png" alt="Team collaboration" fill className="object-cover" />
           </motion.div>
         </div>
       </div>

@@ -11,8 +11,6 @@ import { GetStartedSteps } from "@/components/get-started-steps"
 import { LoadingSpinner } from "@/components/loading-spinner"
 import { JoinMovement } from "@/components/join-movement"
 
-import React from "react"
-
 export default function Home() {
   return (
     <main>

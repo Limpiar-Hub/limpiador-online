@@ -59,7 +59,6 @@ export function AppDownload() {
             />
           </div>
         </div>
-
       </div>
     </section>
   )

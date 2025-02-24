@@ -4,6 +4,7 @@ import { useState } from "react"
 import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 const services = [
   {
@@ -139,9 +140,11 @@ export function ServicesNavigation() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.4 }}
                   >
-                    <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                    Learn More
-                  </Button>
+                    <Link href="https://limpiar.online/landingpage">
+                      <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+                        Learn More
+                      </Button>
+                    </Link>
                   </motion.div>
                 </div>
               </motion.div>

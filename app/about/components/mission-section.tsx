@@ -14,10 +14,10 @@ export function MissionSection() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-8">Our Mission</h2>
           <p className="text-xl text-gray-600 leading-relaxed">
-          We combine state-of-the-art technology with best-in-class cleaning practices to offer services that not only
-          meet but exceed our clients&apos; expectations. From reducing chemical use to implementing advanced recycling
-          techniques, every aspect of our operation is designed with sustainability at its core.
-        </p>
+            We combine state-of-the-art technology with best-in-class cleaning practices to offer services that not only
+            meet but exceed our clients&apos; expectations. From reducing chemical use to implementing advanced
+            recycling techniques, every aspect of our operation is designed with sustainability at its core.
+          </p>
         </motion.div>
       </div>
     </section>

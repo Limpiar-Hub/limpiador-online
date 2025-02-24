@@ -1,5 +1,7 @@
 "use client"
 
+import type React from "react"
+
 import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
@@ -12,12 +14,12 @@ export function Footer() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-  
+
     if (!email) {
       console.error("Email is required")
       return
     }
-  
+
     try {
       const response = await fetch("/api/sendEmail", {
         method: "POST",
@@ -26,11 +28,11 @@ export function Footer() {
         },
         body: JSON.stringify({ name: "Subscriber", email }), // Use "Subscriber" as the name
       })
-  
+
       if (!response.ok) {
         throw new Error("Failed to send email")
       }
-  
+
       console.log("Email sent successfully!")
     } catch (error) {
       console.error("Error:", error)
@@ -44,17 +46,9 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <Link href="/" className="inline-block">
-              <Image
-                src="/logo.png"
-                alt="Limpiar Logo"
-                width={120}
-                height={40}
-                className="h-8 w-auto"
-              />
+              <Image src="/logo.png" alt="Limpiar Logo" width={120} height={40} className="h-8 w-auto" />
             </Link>
-            <p className="text-sm text-gray-600">
-              Professional services that care for your space and the environment.
-            </p>
+            <p className="text-sm text-gray-600">Professional services that care for your space and the environment.</p>
           </div>
 
           {/* Quick Links */}
@@ -109,8 +103,8 @@ export function Footer() {
                 </label>
               </div>
               <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white">
-              Sign Up
-            </Button>
+                Sign Up
+              </Button>
             </form>
           </div>
         </div>

@@ -1,25 +1,25 @@
-'use client'
+"use client"
 
-import { motion } from 'framer-motion'
-import CountUp from 'react-countup'
-import { useInView } from 'react-intersection-observer'
+import { motion } from "framer-motion"
+import CountUp from "react-countup"
+import { useInView } from "react-intersection-observer"
 
 const stats = [
   {
     value: 30,
-    suffix: '%',
-    label: 'Cost Savings',
-    description: 'Average reduction in cleaning costs'
+    suffix: "%",
+    label: "Cost Savings",
+    description: "Average reduction in cleaning costs",
   },
   {
     value: 10000,
-    label: 'Property Managers',
-    description: 'Satisfied customers using our services'
+    label: "Property Managers",
+    description: "Satisfied customers using our services",
   },
   {
     value: 336,
-    label: 'Hours Saved',
-    description: 'Average time saved per property manager'
+    label: "Hours Saved",
+    description: "Average time saved per property manager",
   },
 ]
 

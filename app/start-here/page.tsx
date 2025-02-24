@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
-import Image from "next/image";
-import { Suspense } from "react";
-import { LoadingSpinner } from "@/components/loading-spinner";
+import type { Metadata } from "next"
+import Image from "next/image"
+import { Suspense } from "react"
+import { LoadingSpinner } from "@/components/loading-spinner"
 
 export const metadata: Metadata = {
   title: "Start Here - Limpiador",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+}
 
 export default function StartHerePage() {
   return (
@@ -25,25 +25,14 @@ export default function StartHerePage() {
       <Suspense fallback={<LoadingSpinner />}>
         <section className="container mx-auto py-12">
           <div className="flex justify-center">
-            <Image 
-              src="/start.png" 
-              alt="Start Here Banner" 
-              width={800} 
-              height={500} 
-              className="max-w-full h-auto"
-            />
+            <Image src="/start.png" alt="Start Here Banner" width={800} height={500} className="max-w-full h-auto" />
           </div>
           <div className="flex justify-center mt-8">
-            <Image 
-              src="/start2.png" 
-              alt="Security Checks" 
-              width={600} 
-              height={400} 
-              className="max-w-full h-auto"
-            />
+            <Image src="/start2.png" alt="Security Checks" width={600} height={400} className="max-w-full h-auto" />
           </div>
         </section>
       </Suspense>
     </main>
-  );
+  )
 }
+

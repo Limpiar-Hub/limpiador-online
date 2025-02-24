@@ -1,9 +1,9 @@
-"use client";
+"use client"
 
-import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import Image from "next/image";
-import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { useState, useEffect } from "react"
+import { motion } from "framer-motion"
+import Image from "next/image"
+import { X, ChevronLeft, ChevronRight } from "lucide-react"
 
 const images = [
   { src: "/gallery.png", alt: "Team members cleaning" },
@@ -12,37 +12,36 @@ const images = [
   { src: "/gallery4.png", alt: "OK Cleaners neon sign" },
   { src: "/gallery5.png", alt: "OK Cleaners neon sign" },
   { src: "/gallery6.png", alt: "OK Cleaners neon sign" },
-];
+]
 
 export function TeamGallery() {
-  const [selectedImage, setSelectedImage] = useState<number | null>(null);
+  const [selectedImage, setSelectedImage] = useState<number | null>(null)
 
   const openModal = (index: number) => {
-    setSelectedImage(index);
-  };
+    setSelectedImage(index)
+  }
 
   const closeModal = () => {
-    setSelectedImage(null);
-  };
+    setSelectedImage(null)
+  }
 
   const showNext = () => {
-    setSelectedImage((prev) => (prev !== null ? (prev + 1) % images.length : 0));
-  };
-  
+    setSelectedImage((prev) => (prev !== null ? (prev + 1) % images.length : 0))
+  }
+
   const showPrev = () => {
-    setSelectedImage((prev) => (prev !== null ? (prev - 1 + images.length) % images.length : images.length - 1));
-  };
-  
+    setSelectedImage((prev) => (prev !== null ? (prev - 1 + images.length) % images.length : images.length - 1))
+  }
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") closeModal();
-      if (e.key === "ArrowRight") showNext();
-      if (e.key === "ArrowLeft") showPrev();
-    };
-    document.addEventListener("keydown", handleKeyDown);
-    return () => document.removeEventListener("keydown", handleKeyDown);
-  }, [selectedImage]);
+      if (e.key === "Escape") closeModal()
+      if (e.key === "ArrowRight") showNext()
+      if (e.key === "ArrowLeft") showPrev()
+    }
+    document.addEventListener("keydown", handleKeyDown)
+    return () => document.removeEventListener("keydown", handleKeyDown)
+  }, [selectedImage])
 
   return (
     <section className="py-12">
@@ -58,8 +57,13 @@ export function TeamGallery() {
               onClick={() => openModal(index)}
             >
               {/* Image */}
-              <Image src={image.src} alt={image.alt} fill className="object-cover transition-transform duration-300 group-hover:scale-105" />
-              
+              <Image
+                src={image.src}
+                alt={image.alt}
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+
               {/* Hover Overlay */}
               <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
             </motion.div>
@@ -85,5 +89,6 @@ export function TeamGallery() {
         </div>
       )}
     </section>
-  );
+  )
 }
+

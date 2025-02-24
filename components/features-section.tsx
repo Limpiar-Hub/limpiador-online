@@ -5,6 +5,7 @@ import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
+import Link from "next/link"
 
 const features = [
   {
@@ -14,7 +15,7 @@ const features = [
       "Track progress, monitor performance, and ensure every job meets your standards. Our accountability dashboard gives you full transparency, so you always know who’s on-site and what’s getting done.",
     image: "/transparenc.png",
   },
-  
+
   {
     id: "efficiency",
     title: "Smart Scheduling Assistant",
@@ -73,9 +74,11 @@ export function FeaturesSection() {
                   <div className="space-y-4">
                     <h2 className="text-3xl font-bold tracking-tight">{feature.title}</h2>
                     <p className="text-gray-600 leading-relaxed">{feature.description}</p>
-                    <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                      Get Started
-                    </Button>
+                    <Link href="https://limpiar.online/landingpage">
+                      <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+                        Get Started
+                      </Button>
+                    </Link>
                   </div>
                   <div className="relative h-[400px] rounded-xl overflow-hidden">
                     <Image

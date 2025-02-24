@@ -1,37 +1,37 @@
-'use client'
+"use client"
 
-import { motion } from 'framer-motion'
-import { Building2, Users, Zap, Cpu, Clock, Leaf } from 'lucide-react'
+import { motion } from "framer-motion"
+import { Building2, Users, Zap, Cpu, Clock, Leaf } from "lucide-react"
 
 const features = [
   {
-    title: 'Centralized Management',
-    description: 'Streamline operations with our centralized system',
+    title: "Centralized Management",
+    description: "Streamline operations with our centralized system",
     icon: Building2,
   },
   {
-    title: 'Streamlined Property Management',
-    description: 'Efficient property management solutions',
+    title: "Streamlined Property Management",
+    description: "Efficient property management solutions",
     icon: Users,
   },
   {
-    title: 'Rapid Deployment',
-    description: 'Quick and efficient service deployment',
+    title: "Rapid Deployment",
+    description: "Quick and efficient service deployment",
     icon: Zap,
   },
   {
-    title: 'Advanced Technology',
-    description: 'Cutting-edge cleaning technology',
+    title: "Advanced Technology",
+    description: "Cutting-edge cleaning technology",
     icon: Cpu,
   },
   {
-    title: 'On-Demand Solutions',
-    description: 'Flexible cleaning solutions when you need them',
+    title: "On-Demand Solutions",
+    description: "Flexible cleaning solutions when you need them",
     icon: Clock,
   },
   {
-    title: 'Eco-Friendly Services',
-    description: 'Sustainable and environmentally conscious cleaning',
+    title: "Eco-Friendly Services",
+    description: "Sustainable and environmentally conscious cleaning",
     icon: Leaf,
   },
 ]

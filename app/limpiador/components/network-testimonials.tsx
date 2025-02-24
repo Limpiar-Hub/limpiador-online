@@ -8,24 +8,21 @@ const testimonials = [
   {
     name: "Samantha Lee",
     role: "Small Business Owner",
-    image:
-      "/samantha.png",
+    image: "/samantha.png",
     quote:
       "Joining Limpiar's network has been a game-changer for my cleaning business. The increased visibility and support have helped me grow my client base significantly.",
   },
   {
     name: "Carlos Martinez",
     role: "Team Manager",
-    image:
-      "/aisha.png",
+    image: "/aisha.png",
     quote:
       "The training and resources provided by Limpiar have elevated our team's performance. We're now able to take on more complex projects with confidence.",
   },
   {
     name: "Aisha Roberts",
     role: "Cleaning Professional",
-    image:
-      "/carlos.png",
+    image: "/carlos.png",
     quote:
       "I love being part of the Limpiar network. The flexible scheduling and fair pay have improved my work-life balance, and I feel valued as a professional.",
   },

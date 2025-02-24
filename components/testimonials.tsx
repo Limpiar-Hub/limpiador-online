@@ -48,14 +48,14 @@ export function Testimonials() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-blue-50 to-white">
       <div className="container mx-auto px-4">
-      <motion.h2
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="text-4xl md:text-5xl font-bold text-center mb-25 py-12"
-      >
-        Why Managers Love Limpiar
-      </motion.h2>
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-4xl md:text-5xl font-bold text-center mb-25 py-12"
+        >
+          Why Managers Love Limpiar
+        </motion.h2>
         <div className="relative h-[500px] md:h-[600px] lg:h-[700px]">
           {/* Image Container */}
           <AnimatePresence mode="wait">
@@ -70,11 +70,7 @@ export function Testimonials() {
                     transition={{ duration: 0.5 }}
                     className="absolute inset-0"
                   >
-                    <a
-                      href={testimonial.imageLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <a href={testimonial.imageLink} target="_blank" rel="noopener noreferrer">
                       <Image
                         src={testimonial.image || "/placeholder.svg"}
                         alt={testimonial.name}
@@ -103,9 +99,7 @@ export function Testimonials() {
                       transition={{ duration: 0.5 }}
                       className="max-w-2xl mx-auto"
                     >
-                      <h3 className="text-4xl font-light italic text-white">
-                        {testimonial.name}
-                      </h3>
+                      <h3 className="text-4xl font-light italic text-white">{testimonial.name}</h3>
                       <p className="text-xl text-gray-200 mt-2">{testimonial.role}</p>
                       <blockquote className="text-lg text-gray-100 leading-relaxed mt-4">
                         {testimonial.quote}
@@ -134,3 +128,4 @@ export function Testimonials() {
     </section>
   )
 }
+

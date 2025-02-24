@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import Link from "next/link"
 
 export function HeroSection() {
   const [email, setEmail] = useState("")
@@ -41,7 +42,10 @@ export function HeroSection() {
     <section className="relative min-h-[600px] overflow-hidden">
       {/* Video Background */}
       <video autoPlay loop muted playsInline className="absolute inset-0 h-full w-full object-cover">
-        <source src="https://github.com/Oluwaferanmi-Dev/limpiador-online/raw/refs/heads/main/public/hero-video.mp4" type="video/mp4" />
+        <source
+          src="https://github.com/Oluwaferanmi-Dev/limpiador-online/raw/refs/heads/main/public/hero-video.mp4"
+          type="video/mp4"
+        />
       </video>
 
       {/* Gradient Overlay */}
@@ -71,14 +75,11 @@ export function HeroSection() {
               className="bg-white/10 text-white placeholder:text-gray-400"
               aria-label="Business email"
             />
-            <Button
-              size="lg"
-              className="bg-blue-600 hover:bg-blue-700"
-              onClick={handleSubmit}
-              disabled={loading}
-            >
-              {loading ? "Sending..." : "Get Started"}
-            </Button>
+            <Link href="https://limpiar.online/landingpage">
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+                Get Started
+              </Button>
+            </Link>
           </div>
           {message && <p className="mt-4 text-sm text-gray-300">{message}</p>}
         </motion.div>
@@ -86,3 +87,4 @@ export function HeroSection() {
     </section>
   )
 }
+

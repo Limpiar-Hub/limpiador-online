@@ -7,20 +7,17 @@ const eligibilityCriteria = [
   {
     title: "Team Size",
     description: "Have at least 3-5 full-time employees. We believe in the power of team to make a big impact.",
-    image:
-      "/team.png",
+    image: "/team.png",
   },
   {
     title: "Verification and Compliance",
     description: "Pass through background checks and maintain required licenses. We prioritize safety and compliance.",
-    image:
-      "/verfication.png",
+    image: "/verfication.png",
   },
   {
     title: "Equipments",
     description: "Ensure you have proper tools and equipment to deliver high-quality service.",
-    image:
-      "/mopping.png",
+    image: "/mopping.png",
   },
 ]
 

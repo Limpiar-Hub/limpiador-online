@@ -21,7 +21,10 @@ export function HeroSection() {
               Limpiar is dedicated to eco-friendly solutions that ensure clean, safe, and healthy environments for all.
             </p>
             <div className="flex space-x-4 mb-8">
-              <a href="https://www.facebook.com/limpiar.official?mibextid=LQQJ4d" className="text-gray-600 hover:text-blue-600">
+              <a
+                href="https://www.facebook.com/limpiar.official?mibextid=LQQJ4d"
+                className="text-gray-600 hover:text-blue-600"
+              >
                 <Facebook className="w-6 h-6" />
               </a>
               <a href="https://twitter.com/LimpiarOnline" className="text-gray-600 hover:text-blue-600">
@@ -34,26 +37,17 @@ export function HeroSection() {
                 <Linkedin className="w-6 h-6" />
               </a>
             </div>
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white">
-              Learn More
-            </Button>
+            <Button className="bg-blue-600 hover:bg-blue-700 text-white">Learn More</Button>
           </motion.div>
 
           <motion.div
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          className="relative w-full min-h-[700px] aspect-[4/3] rounded-xl overflow-hidden"
-        >
-          <Image
-            src="/about-us.png"
-            alt="Limpiar team member"
-            fill
-            className="object-cover"
-            priority
-          />
-        </motion.div>
-
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="relative w-full min-h-[700px] aspect-[4/3] rounded-xl overflow-hidden"
+          >
+            <Image src="/about-us.png" alt="Limpiar team member" fill className="object-cover" priority />
+          </motion.div>
         </div>
       </div>
     </section>
