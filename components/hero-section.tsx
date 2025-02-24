@@ -8,7 +8,7 @@ import Link from "next/link"
 
 export function HeroSection() {
   const [email, setEmail] = useState("")
-  const [message, setMessage] = useState("")
+  const [message,] = useState("")
 
   return (
     <section className="relative min-h-[600px] overflow-hidden">
