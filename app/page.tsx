@@ -1,18 +1,31 @@
 import { Suspense } from "react"
-import { HeroSection } from "@/components/home/hero-section"
-import { TargetAudience } from "@/components/home/target-audience"
-import { InfoCards } from "@/components/home/info-cards"
+import { HeroSection } from "@/components/hero-section"
+import { PartnerLogos } from "@/components/partner-logos"
+import { ServicesNavigation } from "@/components/services-navigation"
+import { FeaturesSection } from "@/components/features-section"
+import { LimpiarAdvantage } from "@/components/limpiar-advantage"
+import { ServiceCircles } from "@/components/service-circles"
+import { Testimonials } from "@/components/testimonials"
+import { StatsBar } from "@/components/stats-bar"
+import { GetStartedSteps } from "@/components/get-started-steps"
 import { LoadingSpinner } from "@/components/loading-spinner"
+import { JoinMovement } from "@/components/join-movement"
 
-export default function HomePage() {
+export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main>
       <HeroSection />
+      <PartnerLogos />
+      <ServicesNavigation />
       <Suspense fallback={<LoadingSpinner />}>
-        <TargetAudience />
-        <InfoCards />
+        <FeaturesSection />
+        <LimpiarAdvantage />
+        <ServiceCircles />
+        <Testimonials />
+        <StatsBar />
+        <GetStartedSteps />
+        <JoinMovement />
       </Suspense>
     </main>
   )
 }
-
