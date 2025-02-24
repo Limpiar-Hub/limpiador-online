@@ -8,35 +8,7 @@ import Link from "next/link"
 
 export function HeroSection() {
   const [email, setEmail] = useState("")
-  const [loading, setLoading] = useState(false)
   const [message, setMessage] = useState("")
-
-  const handleSubmit = async () => {
-    if (!email) {
-      setMessage("Please enter a valid email.")
-      return
-    }
-
-    setLoading(true)
-    setMessage("")
-
-    try {
-      const response = await fetch("/api/sendEmail", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name: "Subscriber", email }),
-      })
-
-      if (!response.ok) {
-        throw new Error("Failed to send email")
-      }
-
-      setMessage("Welcome email sent successfully!")
-      setEmail("")
-    } finally {
-      setLoading(false)
-    }
-  }
 
   return (
     <section className="relative min-h-[600px] overflow-hidden">
@@ -87,4 +59,3 @@ export function HeroSection() {
     </section>
   )
 }
-

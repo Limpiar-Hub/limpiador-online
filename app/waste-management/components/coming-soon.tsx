@@ -35,8 +35,6 @@ export function ComingSoon() {
       } else {
         setMessage("An error occurred. Please try again.")
       }
-    } catch (error) {
-      setMessage("An error occurred. Please try again.")
     } finally {
       setLoading(false)
     }
@@ -53,7 +51,7 @@ export function ComingSoon() {
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Coming Soon</h2>
           <p className="text-xl text-gray-600 mb-8">
-            We're working on something amazing. Our sustainable waste management solutions will be available soon. Sign
+            We&apos;re working on something amazing. Our sustainable waste management solutions will be available soon. Sign
             up to be notified when we launch.
           </p>
           <form onSubmit={handleSubmit} className="flex flex-col items-center space-y-4">
