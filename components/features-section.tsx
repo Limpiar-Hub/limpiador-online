@@ -74,7 +74,7 @@ export function FeaturesSection() {
                   <div className="space-y-4">
                     <h2 className="text-3xl font-bold tracking-tight">{feature.title}</h2>
                     <p className="text-gray-600 leading-relaxed">{feature.description}</p>
-                    <Link href="https://limpiar.online/landingpage">
+                    <Link href="https://sales.limpiar.online/home--limpiar-page">
                       <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
                         Get Started
                       </Button>
