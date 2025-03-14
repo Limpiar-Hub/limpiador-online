@@ -74,7 +74,7 @@ export function HeroSection() {
                 {heroSlides[currentSlide].title}
               </motion.h1>
             </AnimatePresence>
-            <Link href="https://onboarding.limpiar.online/public/onboarding">
+            <Link href="https://sales.limpiar.online/home--limpiar-page">
               <Button size="lg" className="bg-[#4834D4] hover:bg-[#3A2BBF] text-lg px-8">
                 Get Started
               </Button>

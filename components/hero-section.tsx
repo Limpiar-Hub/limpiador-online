@@ -47,7 +47,7 @@ export function HeroSection() {
               className="bg-white/10 text-white placeholder:text-gray-400"
               aria-label="Business email"
             />
-            <Link href="https://limpiar.online/landingpage">
+            <Link href="https://sales.limpiar.online/home--limpiar-page">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
                 Get Started
               </Button>
