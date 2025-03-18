@@ -26,7 +26,7 @@ export function Confirmation({ bookingData, onReset }: ConfirmationProps) {
         </div>
         <h2 className="text-2xl md:text-3xl font-bold mb-2">Your meeting is scheduled!</h2>
         <p className="text-gray-600">
-          We've sent a calendar invitation to your email. Looking forward to speaking with you!
+          We&apos;ve sent a calendar invitation to your email. Looking forward to speaking with you!
         </p>
       </motion.div>
 

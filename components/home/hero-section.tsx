@@ -11,7 +11,12 @@ export function HeroSection() {
   const [loading, setLoading] = useState(false)
 
   const handleSubmit = () => {
-    window.location.href = "/schedule-demo"
+    if (!email) return // Prevent empty submissions
+    setLoading(true)
+    setTimeout(() => {
+      window.location.href = "/schedule-demo"
+      setLoading(false)
+    }, 2000) // Simulating a delay before redirection
   }
 
   return (
@@ -43,7 +48,7 @@ export function HeroSection() {
               size="lg"
               className="bg-yellow-400 hover:bg-yellow-500 text-black"
               onClick={handleSubmit}
-              disabled={loading}
+              disabled={loading || !email} // Prevent submission when empty
             >
               {loading ? "Submitting..." : "Get Started"}
             </Button>
@@ -53,4 +58,3 @@ export function HeroSection() {
     </section>
   )
 }
-
