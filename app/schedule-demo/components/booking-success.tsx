@@ -21,7 +21,7 @@ export function BookingSuccess() {
         <h2 className="text-2xl font-bold mb-4">Booking Confirmed!</h2>
 
         <p className="text-gray-600 mb-8">
-          Thank you for scheduling a demo with Limpiar. We've sent a confirmation email with all the details. Our team
+          Thank you for scheduling a demo with Limpiar. We&apos;ve sent a confirmation email with all the details. Our team
           is looking forward to speaking with you and showing how our services can benefit your business.
         </p>
 

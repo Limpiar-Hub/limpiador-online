@@ -11,8 +11,13 @@ export function HeroSection() {
   const [loading, setLoading] = useState(false)
 
   const handleSubmit = () => {
-    window.location.href = "/schedule-demo"
+    setLoading(true)
+    setTimeout(() => {
+      window.location.href = "/schedule-demo"
+      setLoading(false)
+    }, 2000)
   }
+  
 
   return (
     <section className="relative min-h-[80vh] flex items-center">
@@ -40,13 +45,13 @@ export function HeroSection() {
               disabled={loading}
             />
             <Button
-              size="lg"
-              className="bg-yellow-400 hover:bg-yellow-500 text-black"
-              onClick={handleSubmit}
-              disabled={loading}
-            >
-              {loading ? "Submitting..." : "Get Started"}
-            </Button>
+            size="lg"
+            className="bg-yellow-400 hover:bg-yellow-500 text-black"
+            onClick={handleSubmit}
+            disabled={loading}
+          >
+            {loading ? "Submitting..." : "Get Started"}
+          </Button>
           </div>
         </motion.div>
       </div>
