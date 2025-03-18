@@ -74,7 +74,7 @@ export function HeroSection() {
                 {heroSlides[currentSlide].title}
               </motion.h1>
             </AnimatePresence>
-            <Link href="https://sales.limpiar.online/home--limpiar-page">
+            <Link href="/schedule-demo">
               <Button size="lg" className="bg-[#4834D4] hover:bg-[#3A2BBF] text-lg px-8">
                 Get Started
               </Button>
@@ -85,3 +85,4 @@ export function HeroSection() {
     </section>
   )
 }
+

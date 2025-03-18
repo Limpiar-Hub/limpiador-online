@@ -1,9 +1,11 @@
-import nodemailer from "nodemailer"
 import { NextResponse } from "next/server"
+// import nodemailer from "nodemailer"
 
 export async function POST(request: Request) {
   const { email } = await request.json()
 
+  // Commented out for preview purposes
+  /*
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
@@ -26,5 +28,10 @@ export async function POST(request: Request) {
     console.error("Error sending email:", error)
     return NextResponse.json({ error: "Failed to subscribe" }, { status: 500 })
   }
+  */
+
+  // Mock success response for preview
+  console.log("Subscription would be processed for:", email)
+  return NextResponse.json({ message: "Subscription successful (Preview mode)" })
 }
 

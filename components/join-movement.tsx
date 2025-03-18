@@ -22,7 +22,7 @@ export function JoinMovement() {
             managers everywhere who are redefining cleanliness and efficiency.
           </p>
           <div>
-            <Link href="https://sales.limpiar.online/home--limpiar-page">
+            <Link href="/schedule-demo">
               <Button size="lg" variant="secondary" className="text-blue-500 hover:text-blue-600">
                 Get Started
               </Button>

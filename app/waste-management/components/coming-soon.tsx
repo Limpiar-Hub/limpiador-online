@@ -51,8 +51,8 @@ export function ComingSoon() {
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Coming Soon</h2>
           <p className="text-xl text-gray-600 mb-8">
-            We&apos;re working on something amazing. Our sustainable waste management solutions will be available soon. Sign
-            up to be notified when we launch.
+            We&apos;re working on something amazing. Our sustainable waste management solutions will be available soon.
+            Sign up to be notified when we launch.
           </p>
           <form onSubmit={handleSubmit} className="flex flex-col items-center space-y-4">
             <Input

@@ -78,7 +78,7 @@ export function Navbar() {
 
           {/* Get Started Button */}
           <Link
-            href="https://sales.limpiar.online/home--limpiar-page"
+            href="/schedule-demo"
             className="hidden md:inline-flex bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium"
           >
             Get Started
@@ -114,8 +114,8 @@ export function Navbar() {
                   Social Impact
                 </Link>
                 <Link
-                  href="https://sales.limpiar.online/home--limpiar-page"
-                  className="hidden md:inline-flex bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium"
+                  href="/schedule-demo"
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium text-center mt-4"
                 >
                   Get Started
                 </Link>
