@@ -21,9 +21,9 @@ export function GetOnboard() {
               exceed our clients’ expectations. From reducing chemical use to implementing advanced recycling
               techniques, every aspect of our operation is designed with sustainability at its core.
             </p>
-            <Link href="https://limpiar.online/landingpage">
+            <Link href="/schedule-demo">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                Join Our Team
+                Get Started
               </Button>
             </Link>
           </motion.div>

@@ -140,9 +140,9 @@ export function ServicesNavigation() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.4 }}
                   >
-                    <Link href="https://limpiar.online/landingpage">
+                    <Link href="/schedule-demo">
                       <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                        Learn More
+                        Get Started
                       </Button>
                     </Link>
                   </motion.div>
