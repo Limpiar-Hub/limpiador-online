@@ -3,7 +3,6 @@ import type { Metadata } from "next"
 import { Suspense } from "react"
 import { Analytics } from "@vercel/analytics/react"
 import type React from "react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
