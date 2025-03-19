@@ -21,7 +21,7 @@ export function HeroSection() {
   return (
     <section className="relative min-h-[80vh] flex items-center overflow-hidden">
       <video 
-        src="/hero-video.mp4" 
+        src="https://drive.google.com/uc?id=1qwLP6c7H-BX3yHIIN01qNlK7UsjDHr9E&export=download" 
         autoPlay 
         loop 
         muted 
