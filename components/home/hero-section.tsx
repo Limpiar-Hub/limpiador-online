@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 
@@ -11,17 +10,24 @@ export function HeroSection() {
   const [loading, setLoading] = useState(false)
 
   const handleSubmit = () => {
-    if (!email) return // Prevent empty submissions
+    if (!email) return 
     setLoading(true)
     setTimeout(() => {
       window.location.href = "/schedule-demo"
       setLoading(false)
-    }, 2000) // Simulating a delay before redirection
+    }, 2000) 
   }
 
   return (
-    <section className="relative min-h-[80vh] flex items-center">
-      <Image src="/cleaners.png" alt="Limpiar cleaning staff" fill className="object-cover" priority />
+    <section className="relative min-h-[80vh] flex items-center overflow-hidden">
+      <video 
+        src="/hero-video.mp4" 
+        autoPlay 
+        loop 
+        muted 
+        playsInline 
+        className="absolute inset-0 w-full h-full object-cover"
+      />
       <div className="absolute inset-0 bg-black/20" />
 
       <div className="relative container mx-auto px-4 py-24 text-center">
@@ -34,7 +40,9 @@ export function HeroSection() {
           <h1 className="text-4xl md:text-6xl font-bold text-white bg-black/50 inline-block px-6 py-2">
             Sustainable solutions
           </h1>
-          <p className="text-xl md:text-2xl text-white bg-black/50 inline-block px-4 py-2">For the modern business</p>
+          <p className="text-xl md:text-2xl text-white bg-black/50 inline-block px-4 py-2">
+            For the modern business
+          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
             <Input
               type="email"
@@ -48,7 +56,7 @@ export function HeroSection() {
               size="lg"
               className="bg-yellow-400 hover:bg-yellow-500 text-black"
               onClick={handleSubmit}
-              disabled={loading || !email} // Prevent submission when empty
+              disabled={loading || !email}
             >
               {loading ? "Submitting..." : "Get Started"}
             </Button>
